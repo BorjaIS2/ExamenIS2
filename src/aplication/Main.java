@@ -10,6 +10,7 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import model.Statue;
 import model.Thematic;
+import model.Thematic.thematic;
 import view.PatrimonialView;
 
 /**
@@ -24,7 +25,7 @@ public class Main {
         } catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException e) {
         }
         
-  Statue patrimonialElement = new Statue("David", "Miguel Angel",1501,"manual",["Marmol","Tallado"],"buen estado","Florencia,Venecia",[Thematic.thematic.art,Thematic.thematic.architecture]);
+  Statue patrimonialElement = new Statue("David", "Miguel Angel",1501,"manual",("Marmol"),"buen estado","Florencia,Venecia",(Thematic.thematic.art));
   PatrimonialView view = new PatrimonialView(patrimonialElement);
   Controller controller = new Controller(patrimonialElement, view);
   controller.execute();
