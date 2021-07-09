@@ -15,6 +15,10 @@ import model.PatrimonialElement;
 public class PatrimonialView {
     PatrimonialElement element;
     Controller controller;
+    
+    public PatrimonialView(PatrimonialElement element) {
+        this.element = element;
+    }
 
     public PatrimonialView(PatrimonialElement element, Controller controller) {
         this.element = element;
